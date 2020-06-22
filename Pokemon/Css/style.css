@@ -1,0 +1,311 @@
+/* CLASSES*/
+.posRelative {
+    position: relative;
+}
+
+.container {
+    width: 57%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.container header {
+    text-align: center;
+}
+
+.container header img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* MAIN */
+.container main {
+    text-align: center;
+}
+
+.container main .pokemonWrapper {
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.container main .tegel{
+    background-color: #f4f4f4;
+    vertical-align: top;
+    padding: 0 10px;
+    margin: 10px;
+    text-align: center;
+    width: 111px;
+    height: 122px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
+.container main .pokemonWrapper tr:last-of-type td {
+    border-bottom: 0;
+}
+
+.container main .pokemonWrapper tr td:last-of-type {
+    border-right: 0;
+}
+
+.container main .pokemonWrapper tr:last-of-type td:first-of-type {
+    border-right: 1px solid black;
+}
+
+.container main .pokemonWrapper tr:last-of-type td:last-of-type {
+    border-left: 1px solid black;
+}
+
+.tegel:hover {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 99;
+    box-shadow: 10px 10px 20px #282828a6;
+}
+
+.pokemonWrapper button {
+    height: 128px;
+    width: 100%;
+    background: #f4f4f4;
+    border: none;
+    cursor: pointer;
+}
+
+.container main .tegel p{
+    margin: 0 0 4px 0;
+}
+
+main .tegel span a {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+#closeDetails {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#pokeDetails {
+    display: none;
+    position: relative;
+}
+
+.detailNav img {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav {
+    height: 60px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    word-spacing: -6px;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: top;
+    word-spacing: normal;
+    height: 100%;
+    width: 50%;
+}
+
+
+li:first-of-type button {
+    text-align: left;
+}
+
+li:last-of-type button {
+    text-align: right;
+}
+
+nav ul li .menuItem {
+    border-radius: 5px;
+    height: 60px;
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+nav ul li .menuItem p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav ul li .menuItem img {
+    height: 50px;
+}
+
+/*MAIN*/
+
+.mainWrapper {
+    background-color: green;
+    border-radius: 10px 10px 0 0;
+    padding: 2px 2px;
+    word-spacing: -3px;
+    width: 99.6%;
+    margin-top: 2px;
+    display: table;
+    border-spacing: 2px 0;
+}
+
+.mainWrapper p {
+    margin: 0;
+    padding: 0;
+}
+
+.mainWrapper .wrapper {
+    background-color: lightgreen;
+    display: table-cell;
+    word-spacing: normal;
+    padding: 10px;
+    min-height: 125px;
+    vertical-align: top;
+    border-radius: 10px;
+}
+
+.mainWrapper .wrapper .content {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mainWrapper .wrapper .content .jId,
+.mainWrapper .wrapper .content .jName{
+    width: 130px;
+}
+
+.mainWrapper .wrapper .content .jId {
+    padding: 7px 0;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+
+.mainWrapper .wrapper .content .jName {
+    padding: 27px 0;
+    margin: 0;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.mainWrapper .wIcon{
+    min-width: 116px;
+    min-height: 150px;
+}
+
+.mainWrapper .wrapper .image {
+    margin-top: 10px;
+    min-width: 116px;
+    min-height: 100px;
+}
+
+.mainWrapper .wrapper {
+    text-align: center;
+}
+
+.mainWrapper .wrapper .type {
+    margin-top: 30px;
+}
+
+.mainWrapper .wrapper .buttonType {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mainWrapper .wrapper .jType {
+    padding: 5px;
+    width: 100px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.mainWrapper .wrapper .jAbblitys {
+    padding: 0 27px;
+    min-height: 105px;
+}
+
+.mainWrapper .wrapper .jAbblitys p{
+    padding: 10px 0;
+}
+.mainWrapper .wrapper .jAbblitys p small{
+    color: gray;
+    font-style: Italic;
+}
+
+.mainWrapper .wrapper th{
+    padding-bottom:35px;
+}
+
+.mainWrapper .wrapper .statsSection {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.mainWrapper .wrapper .statsSection:first-of-type {
+    margin-left: 0;
+}
+
+.statTable{
+    margin: 0 auto;
+}
+
+.mainWrapper .wrapper .hp,
+.mainWrapper .wrapper .attack,
+.mainWrapper .wrapper .defense,
+.mainWrapper .wrapper .special-attack,
+.mainWrapper .wrapper .special-defense,
+.mainWrapper .wrapper .speed {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 8px;
+}
+
+.mainWrapper .wrapper .hp {
+    background-color: red;
+}
+
+.mainWrapper .wrapper .attack {
+    background-color: orange;
+}
+
+.mainWrapper .wrapper .defense {
+    background-color: yellow;
+}
+
+.mainWrapper .wrapper .special-attack {
+    background-color: blue;
+}
+
+.mainWrapper .wrapper .special-defense {
+    background-color: green;
+}
+
+.mainWrapper .wrapper .speed {
+    background-color: pink;
+}
